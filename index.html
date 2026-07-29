@@ -1,1470 +1,601 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SACHIN KC | Software Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Professional Portfolio of Sachin KC | BCA Student | Aspiring Full Stack Developer"
+    />
 
-    <meta name="description"
-        content="Professional Portfolio of SACHIN KC | Software Developer | BCA Student">
+    <title>SACHIN KC | Portfolio</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="loader">
-    <div class="spinner"></div>
-</div>
+    <!-- ================= PRELOADER ================= -->
 
-<div id="progressBar"></div>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
-<header>
+    <!-- ================= BACKGROUND ================= -->
 
-<nav>
+    <div class="bg-gradient"></div>
+    <div class="grid-overlay"></div>
 
-<div class="logo">
-<h2>SACHIN<span>.</span></h2>
-</div>
+    <!-- ================= HEADER ================= -->
 
-<ul class="nav-links">
+    <header class="header" id="header">
 
-<li><a href="#home">Home</a></li>
+        <div class="container nav-container">
 
-<li><a href="#about">About</a></li>
+            <a href="#" class="logo">
+                <span>S</span>ACHIN
+            </a>
 
-<li><a href="#skills">Skills</a></li>
+            <nav class="navbar" id="navbar">
 
-<li><a href="#projects">Projects</a></li>
+                <ul class="nav-links">
 
-<li><a href="#education">Education</a></li>
+                    <li><a href="#home">Home</a></li>
 
-<li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
 
-</ul>
+                    <li><a href="#skills">Skills</a></li>
 
-<div class="nav-buttons">
+                    <li><a href="#projects">Projects</a></li>
 
-<button id="theme-toggle">
+                    <li><a href="#education">Education</a></li>
 
-<i class="fa-solid fa-moon"></i>
+                    <li><a href="#contact">Contact</a></li>
 
-</button>
+                </ul>
 
-<div class="menu-btn">
+            </nav>
 
-<i class="fa-solid fa-bars"></i>
+            <div class="nav-actions">
 
-</div>
+                <button id="theme-toggle" aria-label="Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-</div>
+                <button class="menu-btn" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-</nav>
+            </div>
 
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section id="home">
-
-<div class="container hero">
-
-<div class="hero-left" data-aos="fade-right">
-
-<h4>Hello, I'm</h4>
-
-<h1>SACHIN KC</h1>
-
-<h3>
-
-<span id="typing"></span>
-
-</h3>
-
-<p>
-
-I build modern web applications with beautiful UI,
-
-clean code and user-friendly experiences.
-
-Passionate about Software Development,
-
-Python and Full Stack technologies.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#projects" class="btn">
-
-View Projects
-
-</a>
-
-<a href="#" class="btn-outline">
-
-Download Resume
-
-</a>
-
-</div>
-
-<div class="social-icons">
-
-<a href="#"><i class="fab fa-github"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-<a href="#"><i class="fab fa-x-twitter"></i></a>
-
-</div>
-
-</div>
-
-<div class="hero-right" data-aos="fade-left">
-
-<div class="profile-card">
-
-<img src="assets/images/profile.png"
-
-alt="Profile">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>About Me</h2>
-
-<p>
-
-Get to know more about me.
-
-</p>
-
-</div>
-
-<div class="about-grid">
-
-<div class="about-image"
-
-data-aos="fade-right">
-
-<img src="assets/images/profile.png">
-
-</div>
-
-<div class="about-content"
-
-data-aos="fade-left">
-
-<h3>
-
-Software Developer & BCA Student
-
-</h3>
-
-<p>
-
-I am passionate about creating modern,
-
-responsive and dynamic web applications.
-
-My goal is to become a professional
-
-Software Engineer and contribute to
-
-real-world projects.
-
-</p>
-
-<div class="about-info">
-
-<div>
-
-<h4>Name</h4>
-
-<p>SACHIN KC</p>
-
-</div>
-
-<div>
-
-<h4>Email</h4>
-
-<p>yourmail@example.com</p>
-
-</div>
-
-<div>
-
-<h4>Location</h4>
-
-<p>Kerala, India</p>
-
-</div>
-
-<div>
-
-<h4>Experience</h4>
-
-<p>Fresher</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Skills starts in Part 2 -->
-  <!-- ================= SKILLS ================= -->
-
-<section id="skills">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Skills</h2>
-<p>Technologies and tools I use.</p>
-</div>
-
-<div class="skills-grid">
-
-<div class="skill-card" data-aos="zoom-in">
-<i class="fa-brands fa-html5"></i>
-<h3>HTML5</h3>
-</div>
-
-<div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-<i class="fa-brands fa-css3-alt"></i>
-<h3>CSS3</h3>
-</div>
-
-<div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-<i class="fa-brands fa-js"></i>
-<h3>JavaScript</h3>
-</div>
-
-<div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-<i class="fa-brands fa-python"></i>
-<h3>Python</h3>
-</div>
-
-<div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
-<i class="fa-solid fa-database"></i>
-<h3>SQL</h3>
-</div>
-
-<div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
-<i class="fa-brands fa-git-alt"></i>
-<h3>Git</h3>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section id="experience">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Experience</h2>
-<p>My learning journey.</p>
-</div>
-
-<div class="timeline">
-
-<div class="timeline-item" data-aos="fade-up">
-<h3>2024</h3>
-<p>Started BCA and began learning programming fundamentals.</p>
-</div>
-
-<div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
-<h3>2025</h3>
-<p>Built Python and web development projects while improving problem-solving skills.</p>
-</div>
-
-<div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-<h3>2026</h3>
-<p>Focused on Full Stack Development, AI, and creating professional portfolio projects.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Featured Projects</h2>
-<p>Some of my recent work.</p>
-</div>
-
-<div class="projects-grid">
-
-<div class="project-card">
-<img src="assets/images/project1.jpg" alt="Project 1">
-<div class="project-content">
-<h3>AI Resume Analyzer</h3>
-<p>An AI-powered application that analyzes resumes and provides suggestions for improvement.</p>
-<a href="#">View Project</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="assets/images/project2.jpg" alt="Project 2">
-<div class="project-content">
-<h3>Student Management System</h3>
-<p>A web-based system to manage student records, attendance, and results.</p>
-<a href="#">View Project</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="assets/images/project3.jpg" alt="Project 3">
-<div class="project-content">
-<h3>Portfolio Website</h3>
-<p>A modern responsive portfolio with animations, dark mode, and interactive UI.</p>
-<a href="#">View Project</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= EDUCATION ================= -->
-
-<section id="education">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Education</h2>
-<p>My academic journey.</p>
-</div>
-
-<div class="education-grid">
-
-<div class="education-card" data-aos="fade-up">
-<h3>Bachelor of Computer Applications (BCA)</h3>
-<h4>University of Calicut</h4>
-<span>2024 - Present</span>
-<p>
-Currently pursuing a Bachelor's degree in Computer Applications with
-interests in Software Development, AI, Data Science and Full Stack
-Development.
-</p>
-</div>
-
-<div class="education-card" data-aos="fade-up" data-aos-delay="150">
-<h3>Higher Secondary Education</h3>
-<h4>Computer Science</h4>
-<span>Completed</span>
-<p>
-Built a strong foundation in Mathematics, Programming and Computer
-Science fundamentals.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CERTIFICATES ================= -->
-
-<section id="certificates">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Certificates</h2>
-<p>Courses and achievements.</p>
-</div>
-
-<div class="certificate-grid">
-
-<div class="certificate-card">
-<i class="fa-solid fa-award"></i>
-<h3>Python Programming</h3>
-<p>Certification Placeholder</p>
-<a href="#">View Certificate</a>
-</div>
-
-<div class="certificate-card">
-<i class="fa-solid fa-award"></i>
-<h3>Web Development</h3>
-<p>Certification Placeholder</p>
-<a href="#">View Certificate</a>
-</div>
-
-<div class="certificate-card">
-<i class="fa-solid fa-award"></i>
-<h3>AI Fundamentals</h3>
-<p>Certification Placeholder</p>
-<a href="#">View Certificate</a>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= STATS ================= -->
-
-<section id="stats">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat-card">
-<h2>15+</h2>
-<p>Projects</p>
-</div>
-
-<div class="stat-card">
-<h2>10+</h2>
-<p>Certificates</p>
-</div>
-
-<div class="stat-card">
-<h2>1000+</h2>
-<p>Hours of Learning</p>
-</div>
-
-<div class="stat-card">
-<h2>100%</h2>
-<p>Passion</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= SERVICES ================= -->
-
-<section id="services">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Services</h2>
-<p>What I can do.</p>
-</div>
-
-<div class="services-grid">
-
-<div class="service-card">
-<i class="fa-solid fa-code"></i>
-<h3>Web Development</h3>
-<p>Modern responsive websites using HTML, CSS and JavaScript.</p>
-</div>
-
-<div class="service-card">
-<i class="fa-solid fa-laptop-code"></i>
-<h3>Frontend Development</h3>
-<p>Interactive user interfaces with smooth animations.</p>
-</div>
-
-<div class="service-card">
-<i class="fa-solid fa-robot"></i>
-<h3>Python Development</h3>
-<p>Automation scripts and beginner AI-based applications.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Contact Me</h2>
-            <p>Let's build something amazing together.</p>
         </div>
 
-        <div class="contact-wrapper">
+    </header>
 
-            <div class="contact-info">
+    <!-- ================= HERO ================= -->
 
-                <div class="contact-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>yourmail@example.com</p>
-                    </div>
+    <section id="home" class="hero">
+
+        <div class="container hero-container">
+
+            <div class="hero-left">
+
+                <p class="hero-tag">
+                    👋 Hello, I'm
+                </p>
+
+                <h1>
+                    SACHIN KC
+                </h1>
+
+                <h2>
+                    <span id="typing"></span>
+                </h2>
+
+                <p class="hero-description">
+
+                    Passionate BCA student focused on building modern web
+                    applications, solving real-world problems, and continuously
+                    learning new technologies in Full Stack Development,
+                    Artificial Intelligence and Software Engineering.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
                 </div>
 
-                <div class="contact-card">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+91 XXXXXXXXXX</p>
-                    </div>
-                </div>
+                <div class="hero-socials">
 
-                <div class="contact-card">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <h4>Location</h4>
-                        <p>Kerala, India</p>
-                    </div>
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
                 </div>
 
             </div>
 
-            <form id="contactForm">
+            <div class="hero-right">
 
-                <input type="text" placeholder="Your Name" required>
+                <div class="profile-card">
 
-                <input type="email" placeholder="Your Email" required>
+                    <div class="profile-ring"></div>
 
-                <input type="text" placeholder="Subject" required>
+                    <div class="profile-image">
 
-                <textarea rows="6" placeholder="Message"></textarea>
+                        <img
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
+                            alt="Profile"
+                        >
 
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
+                    </div>
 
-            </form>
+                    <div class="floating-card card-one">
+                        HTML
+                    </div>
+
+                    <div class="floating-card card-two">
+                        JavaScript
+                    </div>
+
+                    <div class="floating-card card-three">
+                        Full Stack
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- ================= ABOUT ================= -->
 
-<!-- ================= FOOTER ================= -->
+    <section id="about" class="section">
 
-<footer>
+        <div class="container">
 
-<div class="container footer-content">
+            <div class="section-title">
 
-<h2>SACHIN KC</h2>
+                <span>ABOUT</span>
 
-<p>
-Creating beautiful digital experiences with modern web technologies.
-</p>
+                <h2>Who I Am</h2>
 
-<div class="footer-social">
+            </div>
 
-<a href="#"><i class="fab fa-github"></i></a>
+            <div class="about-grid">
 
-<a href="#"><i class="fab fa-linkedin"></i></a>
+                <div class="glass-card">
 
-<a href="#"><i class="fab fa-instagram"></i></a>
+                    <h3>About Me</h3>
 
-<a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <p>
 
-</div>
+                        I'm <strong>SACHIN KC</strong>, a Bachelor of Computer
+                        Applications (BCA) student with a strong interest in
+                        modern web development, software engineering,
+                        artificial intelligence and user-centered design.
 
-<p class="copyright">
+                    </p>
 
-© 2026 SACHIN KC. All Rights Reserved.
+                    <p>
 
-</p>
+                        I enjoy creating clean, responsive and interactive
+                        digital experiences using HTML, CSS and JavaScript while
+                        continuously improving my programming and problem-solving
+                        skills.
 
-</div>
+                    </p>
 
-</footer>
+                    <p>
 
-<button id="scrollTop">
+                        My goal is to become a professional Full Stack Developer
+                        capable of building scalable and high-quality software
+                        products.
 
-<i class="fa-solid fa-arrow-up"></i>
+                    </p>
 
-</button>
+                </div>
 
-<!-- Typed JS -->
+                <div class="stats-grid">
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <div class="stat-card">
 
-<!-- GSAP -->
+                        <h3>10+</h3>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+                        <p>Projects Built</p>
 
-<!-- AOS -->
+                    </div>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+                    <div class="stat-card">
 
-<!-- Main JS -->
+                        <h3>2026</h3>
 
-<script src="assets/js/main.js"></script>
+                        <p>BCA Student</p>
 
-<script>
+                    </div>
 
-AOS.init({
+                    <div class="stat-card">
 
-duration:1000,
+                        <h3>100%</h3>
 
-once:true
+                        <p>Learning Mindset</p>
 
-});
+                    </div>
 
-</script>
+                    <div class="stat-card">
+
+                        <h3>∞</h3>
+
+                        <p>Passion for Coding</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>SKILLS</span>
+
+                <h2>Technologies</h2>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>C Programming</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Software Engineering</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI Basics</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>PROJECTS</span>
+
+                <h2>Featured Work</h2>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <span>01</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Dynamic Portfolio</h3>
+
+                        <p>
+
+                            A modern responsive portfolio website with
+                            animations, dark mode and interactive UI.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <span>02</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Electricity Billing System</h3>
+
+                        <p>
+
+                            Console based billing system developed using
+                            C programming with slab calculations.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>C</span>
+
+                            <span>Logic</span>
+
+                            <span>Algorithms</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <span>03</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Future Web Apps</h3>
+
+                        <p>
+
+                            Upcoming projects including AI based web
+                            applications and full stack solutions.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>Node</span>
+
+                            <span>MongoDB</span>
+
+                            <span>React</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>EDUCATION</span>
+
+                <h2>Academic Journey</h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+
+                        <span>Calicut University</span>
+
+                        <p>
+
+                            Building strong foundations in programming,
+                            software development, databases, networking,
+                            algorithms and modern web technologies.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>CONTACT</span>
+
+                <h2>Let's Connect</h2>
+
+            </div>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+
+                        Interested in collaborating or working together?
+                        Feel free to reach out.
+
+                    </p>
+
+                    <div class="contact-item">
+
+                        <i class="fas fa-envelope"></i>
+
+                        <span>your@email.com</span>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="fas fa-location-dot"></i>
+
+                        <span>Kerala, India</span>
+
+                    </div>
+
+                </div>
+
+                <form class="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <textarea
+                        rows="6"
+                        placeholder="Your Message"
+                    ></textarea>
+
+                    <button class="btn primary-btn">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+
+                © 2026 SACHIN KC. Crafted with HTML, CSS & JavaScript.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+
+    <button id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
 
 </body>
-
 </html>
-/*==================================================
- SACHIN KC PORTFOLIO
- Professional Portfolio
-==================================================*/
-
-:root{
-
---primary:#4f46e5;
---secondary:#7c3aed;
---accent:#06b6d4;
-
---bg:#0f172a;
---surface:#111827;
---card:#1e293b;
-
---text:#ffffff;
---text2:#cbd5e1;
-
---radius:18px;
-
---shadow:0 20px 60px rgba(0,0,0,.35);
-
---transition:.35s ease;
-
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-html{
-
-overflow-x:hidden;
-
-}
-
-body{
-
-font-family:'Poppins',sans-serif;
-
-background:var(--bg);
-
-color:var(--text);
-
-line-height:1.7;
-
-overflow-x:hidden;
-
-}
-
-img{
-
-max-width:100%;
-
-display:block;
-
-}
-
-a{
-
-text-decoration:none;
-
-color:inherit;
-
-}
-
-ul{
-
-list-style:none;
-
-}
-
-.container{
-
-width:min(1200px,92%);
-
-margin:auto;
-
-}
-
-section{
-
-padding:110px 0;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:70px;
-
-}
-
-.section-title h2{
-
-font-size:42px;
-
-font-weight:700;
-
-margin-bottom:15px;
-
-}
-
-.section-title p{
-
-color:var(--text2);
-
-}
-
-/*============== LOADER ==============*/
-
-#loader{
-
-position:fixed;
-
-inset:0;
-
-background:#000;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-z-index:99999;
-
-}
-
-.spinner{
-
-width:65px;
-
-height:65px;
-
-border-radius:50%;
-
-border:6px solid rgba(255,255,255,.1);
-
-border-top:6px solid var(--accent);
-
-animation:spin 1s linear infinite;
-
-}
-
-@keyframes spin{
-
-100%{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-/*============== PROGRESS BAR ==============*/
-
-#progressBar{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-height:4px;
-
-background:linear-gradient(90deg,var(--primary),var(--accent));
-
-width:0;
-
-z-index:9999;
-
-}
-
-/*============== NAVBAR ==============*/
-
-header{
-
-position:fixed;
-
-top:0;
-
-width:100%;
-
-background:rgba(15,23,42,.85);
-
-backdrop-filter:blur(18px);
-
-z-index:999;
-
-}
-
-nav{
-
-height:80px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-width:min(1200px,92%);
-
-margin:auto;
-
-}
-
-.logo h2{
-
-font-size:30px;
-
-font-weight:800;
-
-}
-
-.logo span{
-
-color:var(--accent);
-
-}
-
-.nav-links{
-
-display:flex;
-
-gap:35px;
-
-}
-
-.nav-links a{
-
-position:relative;
-
-font-weight:500;
-
-transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-color:var(--accent);
-
-}
-
-.nav-links a::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-
-bottom:-8px;
-
-width:0;
-
-height:2px;
-
-background:var(--accent);
-
-transition:.35s;
-
-}
-
-.nav-links a:hover::after{
-
-width:100%;
-
-}
-
-.nav-buttons{
-
-display:flex;
-
-gap:18px;
-
-align-items:center;
-
-}
-
-#theme-toggle{
-
-width:45px;
-
-height:45px;
-
-border:none;
-
-border-radius:50%;
-
-cursor:pointer;
-
-background:var(--card);
-
-color:#fff;
-
-font-size:18px;
-
-transition:.35s;
-
-}
-
-#theme-toggle:hover{
-
-background:var(--accent);
-
-}
-
-.menu-btn{
-
-display:none;
-
-font-size:24px;
-
-cursor:pointer;
-
-}
-
-/*============== HERO ==============*/
-
-.hero{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-align-items:center;
-
-gap:70px;
-
-min-height:100vh;
-
-}
-
-.hero-left h4{
-
-font-size:24px;
-
-color:var(--accent);
-
-}
-
-.hero-left h1{
-
-font-size:72px;
-
-font-weight:800;
-
-margin:12px 0;
-
-}
-
-.hero-left h3{
-
-font-size:32px;
-
-margin-bottom:20px;
-
-}
-
-.hero-left p{
-
-color:var(--text2);
-
-max-width:620px;
-
-margin-bottom:35px;
-
-}
-
-.hero-buttons{
-
-display:flex;
-
-gap:18px;
-
-margin-bottom:35px;
-
-}
-
-.btn{
-
-padding:15px 34px;
-
-border-radius:50px;
-
-background:linear-gradient(135deg,var(--primary),var(--secondary));
-
-color:#fff;
-
-font-weight:600;
-
-transition:.35s;
-
-display:inline-block;
-
-}
-
-.btn:hover{
-
-transform:translateY(-4px);
-
-box-shadow:var(--shadow);
-
-}
-
-.btn-outline{
-
-padding:15px 34px;
-
-border:2px solid var(--accent);
-
-border-radius:50px;
-
-transition:.35s;
-
-}
-
-.btn-outline:hover{
-
-background:var(--accent);
-
-}
-
-.social-icons{
-
-display:flex;
-
-gap:20px;
-
-}
-
-.social-icons a{
-
-width:50px;
-
-height:50px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-border-radius:50%;
-
-background:var(--card);
-
-transition:.35s;
-
-font-size:20px;
-
-}
-
-.social-icons a:hover{
-
-transform:translateY(-8px);
-
-background:var(--accent);
-
-}
-/*==========================
- HERO IMAGE
-==========================*/
-
-.hero-right{
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.profile-card{
-width:400px;
-height:400px;
-border-radius:50%;
-padding:10px;
-background:linear-gradient(135deg,var(--primary),var(--accent));
-animation:float 4s ease-in-out infinite;
-box-shadow:var(--shadow);
-}
-
-.profile-card img{
-width:100%;
-height:100%;
-object-fit:cover;
-border-radius:50%;
-border:8px solid var(--bg);
-}
-
-@keyframes float{
-
-0%{
-transform:translateY(0);
-}
-
-50%{
-transform:translateY(-15px);
-}
-
-100%{
-transform:translateY(0);
-}
-
-}
-
-/*==========================
- ABOUT
-==========================*/
-
-.about-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:60px;
-
-align-items:center;
-
-}
-
-.about-image img{
-
-border-radius:20px;
-
-box-shadow:var(--shadow);
-
-}
-
-.about-content h3{
-
-font-size:36px;
-
-margin-bottom:20px;
-
-}
-
-.about-content p{
-
-color:var(--text2);
-
-margin-bottom:30px;
-
-}
-
-.about-info{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:20px;
-
-}
-
-.about-info div{
-
-background:var(--card);
-
-padding:20px;
-
-border-radius:15px;
-
-transition:.35s;
-
-}
-
-.about-info div:hover{
-
-transform:translateY(-8px);
-
-background:#273549;
-
-}
-
-.about-info h4{
-
-margin-bottom:10px;
-
-color:var(--accent);
-
-}
-
-/*==========================
- SKILLS
-==========================*/
-
-.skills-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:30px;
-
-}
-
-.skill-card{
-
-background:var(--card);
-
-padding:40px;
-
-border-radius:20px;
-
-text-align:center;
-
-transition:.35s;
-
-cursor:pointer;
-
-}
-
-.skill-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:var(--shadow);
-
-}
-
-.skill-card i{
-
-font-size:55px;
-
-margin-bottom:20px;
-
-color:var(--accent);
-
-}
-
-.skill-card h3{
-
-font-size:22px;
-
-}
-
-/*==========================
- TIMELINE
-==========================*/
-
-.timeline{
-
-position:relative;
-
-max-width:900px;
-
-margin:auto;
-
-}
-
-.timeline::before{
-
-content:"";
-
-position:absolute;
-
-left:50%;
-
-top:0;
-
-width:4px;
-
-height:100%;
-
-background:var(--accent);
-
-transform:translateX(-50%);
-
-}
-
-.timeline-item{
-
-background:var(--card);
-
-padding:30px;
-
-width:42%;
-
-border-radius:15px;
-
-margin-bottom:40px;
-
-box-shadow:var(--shadow);
-
-position:relative;
-
-}
-
-.timeline-item:nth-child(odd){
-
-margin-left:0;
-
-}
-
-.timeline-item:nth-child(even){
-
-margin-left:auto;
-
-}
-
-.timeline-item h3{
-
-color:var(--accent);
-
-margin-bottom:10px;
-
-}
-
-/*==========================
- PROJECTS
-==========================*/
-
-.projects-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-gap:35px;
-
-}
-
-.project-card{
-
-background:var(--card);
-
-border-radius:20px;
-
-overflow:hidden;
-
-transition:.35s;
-
-}
-
-.project-card:hover{
-
-transform:translateY(-12px);
-
-box-shadow:var(--shadow);
-
-}
-
-.project-card img{
-
-height:230px;
-
-width:100%;
-
-object-fit:cover;
-
-}
-
-.project-content{
-
-padding:25px;
-
-}
-
-.project-content h3{
-
-margin-bottom:15px;
-
-}
-
-.project-content p{
-
-color:var(--text2);
-
-margin-bottom:20px;
-
-}
-
-.project-content a{
-
-display:inline-block;
-
-padding:10px 22px;
-
-background:var(--accent);
-
-border-radius:30px;
-
-color:#fff;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.project-content a:hover{
-
-opacity:.9;
-
-}
