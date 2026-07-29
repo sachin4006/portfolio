@@ -252,9 +252,9 @@ threshold:0.15
 
 revealElements.forEach(el=>{
 
-el.classList.add("hidden");
+el.classList.add("show");
 
-revealObserver.observe(el);
+
 
 });
 
