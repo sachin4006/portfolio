@@ -963,8 +963,8 @@ footer{
 /* ================= UTILITIES ================= */
 
 .hidden{
-    opacity:0;
-    transform:translateY(45px);
+    opacity:1;
+    transform:none;
     transition:.8s ease;
 }
 
